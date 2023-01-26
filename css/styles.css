@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .container{
@@ -35,23 +35,53 @@ body {
   }
   
   /* Next & previous buttons */
-  .swiper-button-next, 
+    /* .swiper-button-next{
+      right: 50%;
+      right: 300px;
+      transform: translateY(-50%);
+    }
+
+   .swiper-button-prev{
+      right: 50%;
+      left: 300px;
+      transform: translateY(-50%);
+    }    */
+.swiper-custom-nav{
+      position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 100;
+        padding: 0 20rem;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        color: aqua;
+}
+
+  /* .swiper-button-next, 
   .swiper-button-prev {
     cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: 10px;
-    height: 10px;
+    width: auto;
+    height: auto;
     padding: 16px;
-    margin-top: -50px;
     color: white;
     font-weight:40px;
     font-size: 5px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-size: 25px;
+    opacity: .5;
+    background-color: #7a956b;
+    border-radius: 50%;
+  } */
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover{
+    background-color:#fff;
+    cursor: pointer;
+    opacity: 0.5;
   }
-  
     /* Position the "next button" to the right */
   .swiper-button-prev,.swiper-button-next {
     width: 5px;
@@ -62,28 +92,41 @@ body {
   .swiper-pagination-fraction{
     font-size: 20px;
     color: #fff;
+
   }.swiper-scrollbar-drag{
     cursor: pointer;
     background-color: #7a956b;
     top:40px;
     position: relative;
   }
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal{
+        position: absolute;
+        left: 1%;
+        bottom: 100px;
+        z-index: 50;
+        height: -200px;
+        width: 100%;
+        opacity: 1;
+  }
+  .swiper-horizontal>.swiper-scrollbar,
+   .swiper-scrollbar.swiper-scrollbar-horizontal:active{
+    cursor: pointer;
+      opacity: .5;
+      transition: opacity .3s ease-in-out;
+   }
 
 
 .swiper-container{
     padding: 30px 0px 50px 0px;
-    /* width: 100%; */
-    
-}
-.slide{
- 
-}
-.swiper-slide{
-    text-align: center;
 }
 .swiper-slide img{
-    max-width: 100%;
-    min-height: 100%;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 

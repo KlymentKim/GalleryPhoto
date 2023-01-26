@@ -1,9 +1,11 @@
-const swiper = new Swiper('.slider', {
+const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     initialSlide: 0,
     spaceBetween: 60,
     autoHeight: true,
-    
+    autoplay: 1500,
+    autoplayDisableOnInteraction: false,
+		loop: true,
   
     // If we need pagination
     pagination: {
