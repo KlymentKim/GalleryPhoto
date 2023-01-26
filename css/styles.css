@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.container{
+    margin: 0px auto;
+    padding: 0px 50px 0 50px ;
+}
+
+/*************** Пагинация styles *****************/
+.swiper-pagination {
+    top:20px;
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+}
+.swiper-pagination-bullet {
+    /* width: 8px; */
+    /* height: 8px; */
+    background-color:beige;
+    background-color: #fff;
+}
+/***********************************/
+
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .swiper-button-next, 
+  .swiper-button-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 10px;
+    height: 10px;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight:40px;
+    font-size: 5px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+    /* Position the "next button" to the right */
+  .swiper-button-prev,.swiper-button-next {
+    width: 5px;
+    height: 5px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .swiper-pagination-fraction{
+    font-size: 20px;
+    color: #fff;
+  }.swiper-scrollbar-drag{
+    cursor: pointer;
+    background-color: #7a956b;
+    top:40px;
+    position: relative;
+  }
+
+
+.swiper-container{
+    padding: 30px 0px 50px 0px;
+    /* width: 100%; */
+    
+}
+.slide{
+ 
+}
+.swiper-slide{
+    text-align: center;
+}
+.swiper-slide img{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+
+
+@media screen and (max-width:320px),
+(max-width:480px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.container {
+   max-width: 100%;
+   margin: 0 auto;
+   }
+
+}
+
+@media screen and (min-width:1200px) {
+   .container {
+       max-width: 100%;    
+       margin: 0 auto;
+   }
+
+}
