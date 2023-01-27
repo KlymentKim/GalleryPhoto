@@ -1,7 +1,7 @@
 const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     initialSlide: 0,
-    spaceBetween: 400,
+    spaceBetween: 350,
     autoHeight: true,
     autoplayDisableOnInteraction: false,
 		loop: true,
@@ -30,8 +30,9 @@ const swiper = new Swiper('#swiper-1', {
    
     // Navigation arrows
     navigation: {
+      prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev', 
+      
     },
   
     // And if we need scrollbar
@@ -45,14 +46,14 @@ const swiper = new Swiper('#swiper-1', {
         pageUpDown: true
     },
 
-      speed: 500,
+      speed: 900,
  
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
-       effect:'slide',
+       effect:'cude',
     
        breakpoints: {
         767: {
-            spaceBetween: 10,
+            // spaceBetween: 10,
             freeMode: true,
             slidesPerView: 'auto',
             allowTouchMove: true,
@@ -66,11 +67,20 @@ const swiper = new Swiper('#swiper-1', {
         },
         1260: {
             allowTouchMove: true,
-            spaceBetween: 15,
-            slidesPerView: 2,
+            // spaceBetween: 15,
+            // slidesPerView: 0,
             // slidesPerColumn: 2,
         }
-    }
+    },
+
+    effect: 'cube',
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 50,
+      shadowScale: 0.3,
+    },
        
   });
 

@@ -8,7 +8,6 @@ body {
 .container {
   width: 100%;
   margin: 0px auto;
-
 }
 
 /*************** Пагинация styles *****************/
@@ -41,18 +40,19 @@ body {
      .swiper-button-next{
       position: absolute;
       right: 50%;
-      right: 100%;
+      right: 0%;
       transform: translateY(-50%);
       background-image: url('/img/next.svg');
       background-repeat: no-repeat;
       background-size: 100% auto;
       background-position: center;
+      padding-left: 10px;
+      padding-right: 10px;
     }
-
    .swiper-button-prev{
       position: absolute;
       right: 50%;
-      left: 100%;
+      left: 0%;
       transform: translateY(-50%);
       background-image: url('/img/previous.svg');
       background-repeat: no-repeat;
@@ -72,21 +72,21 @@ body {
     cursor: pointer;
     width: auto;
     height: auto;
-    padding: 16px;
+    padding: 15px 15px;
     color: white;
-    font-weight:40px;
-    font-size: 5px;
-    -webkit-user-select: none;
+     -webkit-user-select: none;
     user-select: none;
     --swiper-navigation-size: 25px;
     --swiper-navigation-size: 25px;
-    opacity: 0.5;
+    opacity: 0.2;
+    
   }
   .swiper-button-next:hover,
   .swiper-button-prev:hover{
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
     opacity: 0.8;
+    transition: all 50ms linear 50ms ; 
    ;
   }
     /* Position the "next button" to the right */
@@ -99,21 +99,22 @@ body {
   .swiper-pagination-fraction{
     font-size: 20px;
     color: #fff;
-
-  }.swiper-scrollbar-drag{
-    cursor: pointer;
-    background-color: #7a956b;
-    top:40px;
-    position: relative;
-    display: none;
   }
+  /* .swiper-scrollbar-drag{
+    cursor: pointer;
+    background-color: #308103;
+    top: 15px;
+    position: relative;
+    color: bisque;
+    
+  } */
   /* .swiper-horizontal>.swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal{
         position: absolute;
         left: 1%;
         bottom: 100px;
         z-index: 50;
-        height: -300px;
+        height: -450px;
         width: 100%;
         opacity: 1;
   }
@@ -126,17 +127,21 @@ body {
 
 
 .swiper-container{
-    padding: 30px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 .swiper-slide img{
   display: block;
   margin: 0 auto;
   width: 100%;
   height: 800px;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 10px;
 }
-
+.swipe-navigation{
+  font-family: cursive;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 
 @media screen and (max-width: 320px),
@@ -155,7 +160,7 @@ body {
 
 
     /* Next & previous buttons */ 
-     .swiper-button-next{
+      .swiper-button-next{
       position: absolute;
       top: 84%; 
       right: 85%;
@@ -179,7 +184,7 @@ body {
       background-size: cover;
       background-position: center;
       
-    }  
+    }   
     @media (max-width:320px){
       
       .swiper-button-next {
