@@ -76,7 +76,7 @@ const swiper = new Swiper('#swiper-1', {
             // slidesPerColumn: 2,
         }
     },
-
+    
     effect: 'cube',
     grabCursor: true,
     cubeEffect: {
