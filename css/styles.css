@@ -216,13 +216,13 @@ body {
       .swiper-button-next {
           position: absolute;
           top: 93%;
-          right: 88%;
+          right: 85%;
           transform: translateY(-50%);
       }
      .swiper-button-prev {
           position: absolute;
           top: 93%;
-          left: 88%;
+          left: 85%;
           transform: translateY(-50%);
       }
     }
