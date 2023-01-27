@@ -3,7 +3,6 @@ const swiper = new Swiper('#swiper-1', {
     initialSlide: 0,
     spaceBetween: 400,
     autoHeight: true,
-    autoplay: 1500,
     autoplayDisableOnInteraction: false,
 		loop: true,
   
@@ -51,7 +50,27 @@ const swiper = new Swiper('#swiper-1', {
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
        effect:'slide',
     
-
+       breakpoints: {
+        767: {
+            spaceBetween: 10,
+            freeMode: true,
+            slidesPerView: 'auto',
+            allowTouchMove: true,
+            scrollbar: {
+                el: '.scroll-swiper-scrollbar',
+                hide: true,
+            },
+        },
+        1024: { 
+            allowTouchMove: true,
+        },
+        1260: {
+            allowTouchMove: true,
+            spaceBetween: 15,
+            slidesPerView: 2,
+            // slidesPerColumn: 2,
+        }
+    }
        
   });
 

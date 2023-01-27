@@ -29,7 +29,9 @@ body {
     background-color: #fff;
 }
 /***********************************/
-
+.swiper-container{
+  position: relative;
+}
  /* Add a pointer when hovering over the thumbnail images */
  .cursor {
     cursor: pointer;
@@ -39,7 +41,7 @@ body {
      .swiper-button-next{
       position: absolute;
       right: 50%;
-      right: 300px;
+      right: 100%;
       transform: translateY(-50%);
       background-image: url('/img/next.svg');
       background-repeat: no-repeat;
@@ -50,7 +52,7 @@ body {
    .swiper-button-prev{
       position: absolute;
       right: 50%;
-      left: 300px;
+      left: 100%;
       transform: translateY(-50%);
       background-image: url('/img/previous.svg');
       background-repeat: no-repeat;
