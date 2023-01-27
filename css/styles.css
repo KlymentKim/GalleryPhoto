@@ -135,7 +135,7 @@ body {
   width: 100%;
   height: 800px;
   object-fit:contain;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .swipe-navigation{
   font-family: cursive;
