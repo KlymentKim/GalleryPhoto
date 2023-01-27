@@ -2,12 +2,18 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
+    
 }
 
 .container {
   width: 100%;
   margin: 0px auto;
+}
+.bg-wrapper{
+  background-image: url('/img/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*************** Пагинация styles *****************/
@@ -86,8 +92,14 @@ body {
     background-color: transparent;
     cursor: pointer;
     opacity: 0.8;
-    transition: all 50ms linear 50ms ; 
-   ;
+    transition: all 50ms linear 50ms; 
+  }
+  .swiper-button-next, 
+  .swiper-button-prev {
+   
+    cursor: pointer;
+    padding: 20px 20px;
+    
   }
     /* Position the "next button" to the right */
   .swiper-button-prev,.swiper-button-next {
@@ -127,16 +139,17 @@ body {
 
 
 .swiper-container{
-    padding-top: 30px;
-    padding-bottom: 30px;
+ 
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .swiper-slide img{
   display: block;
   margin: 0 auto;
   width: 100%;
-  height:auto;
-  object-fit:contain;
+  height: auto;
+  object-fit:scale-down;
   border-radius: 20px;
 }
 .swipe-navigation{
@@ -287,7 +300,7 @@ body {
   .swiper-slide img {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     height: auto;
     object-fit:contain;
     border-radius: 15px;
