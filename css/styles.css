@@ -127,13 +127,15 @@ body {
 
 
 .swiper-container{
-    padding: 10px 0px 20px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
 .swiper-slide img{
   display: block;
   margin: 0 auto;
   width: 100%;
-  height: 800px;
+  height:auto;
   object-fit:contain;
   border-radius: 20px;
 }
@@ -155,50 +157,73 @@ body {
       width: 94%;
       height: auto;
       object-fit:contain;
-      border-radius: 10px;
+      border-radius: 15px;
     }
 
 
     /* Next & previous buttons */ 
       .swiper-button-next{
       position: absolute;
-      top: 84%; 
-      right: 85%;
+      top: 94%; 
+      right: 91%;
       transform: translateY(-50%); 
       background-image: url('/img/previous.svg');
       background-repeat: no-repeat;
       background-size:cover;
       background-position:center;
+      padding: 5px 5px;
       
     }
-
-
    .swiper-button-prev{
       position: absolute;
-      top: 84%;
-      left: 85%;
+      top: 94%;
+      left: 91%;
       transform: translateY(-50%);
-      background-image: url('/img/next.svg') ;
-      
+      background-image: url('/img/next.svg');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       
     }   
+    .swiper-pagination { 
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 14px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 700;
+    }
     @media (max-width:320px){
       
       .swiper-button-next {
-          /* position: absolute; */
-          top: 60%;
-          right: 85%;
+          position: absolute;
+          top: 93%;
+          right: 88%;
           transform: translateY(-50%);
       }
      .swiper-button-prev {
-          /* position: absolute; */
-          top: 60%;
-          left: 85%;
+          position: absolute;
+          top: 93%;
+          left: 88%;
           transform: translateY(-50%);
       }
+    }
+
+    .swiper-pagination 
+    .swiper-pagination-fraction 
+    .swiper-pagination-horizontal{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%,-50);
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+      cursor: pointer;
+      padding: 10px 10px;
+      
     }
 }
 
@@ -208,13 +233,49 @@ body {
     padding-left: 32px;
     padding-right: 32px;
   }
-        .swiper-horizontal>.swiper-scrollbar,
-        .swiper-scrollbar.swiper-scrollbar-horizontal {
-          
-          height: -300px;
-          width: 100%;
-          opacity: 1;
-        }
+  .swiper-slide img {
+    display: block;
+    margin: 0 auto;
+    width: 94%;
+    height: auto;
+    object-fit:contain;
+    border-radius: 15px;
+  }
+    /* Next & previous buttons */ 
+    .swiper-button-next{
+      position: absolute;
+      top: 104%; 
+      right: 92%;
+      transform: translateY(-50%); 
+      background-image: url('/img/previous.svg');
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position:center;
+      
+    }
+
+   .swiper-button-prev{
+      position: absolute;
+      top: 104%;
+      left: 92%;
+      transform: translateY(-50%);
+      background-image: url('/img/next.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+    }   
+    .swiper-pagination{ 
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 16px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 700;
+    }
+
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -223,6 +284,32 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .swiper-slide img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    object-fit:contain;
+    border-radius: 15px;
+  }
+
+  .swiper-pagination{ 
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+  }
+  .swiper-button-next, 
+  .swiper-button-prev {
+   
+    cursor: pointer;
+    padding: 16px 16px;
+    
+  }
+
 }
 
 /* @media screen and (max-width:320px),

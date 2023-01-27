@@ -13,7 +13,7 @@ const swiper = new Swiper('#swiper-1', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    //   clickable: true,
+      //  clickable: true,
     //   dynamicBullets: true,
 
 
