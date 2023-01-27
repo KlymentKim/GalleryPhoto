@@ -35,17 +35,19 @@ body {
   }
   
   /* Next & previous buttons */
-    /* .swiper-button-next{
+     .swiper-button-next{
       right: 50%;
       right: 300px;
       transform: translateY(-50%);
+      background-image: url(../img/next.svg);
     }
 
    .swiper-button-prev{
       right: 50%;
       left: 300px;
       transform: translateY(-50%);
-    }    */
+      background-image: url(../img/previous.svg);
+    }    
 .swiper-custom-nav{
       position: absolute;
         top: 50%;
