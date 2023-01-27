@@ -312,39 +312,3 @@ body {
 
 }
 
-/* @media screen and (max-width:320px),
-(max-width:480px) {
-    .container {
-        max-width: 480px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .swiper-button-next{
-      right: 50%;
-      right: 300px;
-      transform: translateY(-50%);
-    }
-    .swiper-button-prev{
-      right: 50%;
-      left: 300px;
-      transform: translateY(-50%);
-    }
-}
-
-@media screen and (min-width: 768px) {
-.container {
-   max-width: 100%;
-   margin: 0 auto;
-   }
-   
-
-}
-
-@media screen and (min-width:1200px) {
-   .container {
-       max-width: 100%;    
-       margin: 0 auto;
-   }
-
-} */
