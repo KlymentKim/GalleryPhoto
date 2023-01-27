@@ -204,7 +204,7 @@ body {
     }   
     .swiper-pagination { 
       position: absolute;
-      top: 30%;
+      top: 15%;
       left: 50%;
       transform: translate(-50%,-50%);
       font-size: 14px;
@@ -242,6 +242,12 @@ body {
       padding: 10px 10px;
       
     }
+    .swiper-container{
+ 
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
