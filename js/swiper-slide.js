@@ -1,7 +1,7 @@
 const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     initialSlide: 0,
-    spaceBetween: 60,
+    spaceBetween: 400,
     autoHeight: true,
     autoplay: 1500,
     autoplayDisableOnInteraction: false,

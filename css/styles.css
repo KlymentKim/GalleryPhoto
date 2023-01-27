@@ -2,12 +2,13 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: black; */
+    background-color: black;
 }
 
-.container{
-    margin: 0px auto;
-    padding: 0px 50px 0 50px ;
+.container {
+  width: 100%;
+  margin: 0px auto;
+
 }
 
 /*************** Пагинация styles *****************/
@@ -33,35 +34,38 @@ body {
  .cursor {
     cursor: pointer;
   }
-  
-  /* Next & previous buttons */
+
+  /* Next & previous buttons */ 
      .swiper-button-next{
+      position: absolute;
       right: 50%;
       right: 300px;
       transform: translateY(-50%);
-      background-image: url(../img/next.svg);
+      background-image: url('/img/next.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
     }
 
    .swiper-button-prev{
+      position: absolute;
       right: 50%;
       left: 300px;
       transform: translateY(-50%);
-      background-image: url(../img/previous.svg);
-    }    
-.swiper-custom-nav{
-      position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        z-index: 100;
-        padding: 0 20rem;
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        color: aqua;
-}
-
-  /* .swiper-button-next, 
+      background-image: url('/img/previous.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+    }  
+    
+  .swiper-button-next::after{
+    display: none;
+  }
+   .swiper-button-prev::after{
+    display: none;
+  }
+    
+  .swiper-button-next, 
   .swiper-button-prev {
     cursor: pointer;
     width: auto;
@@ -74,15 +78,14 @@ body {
     user-select: none;
     --swiper-navigation-size: 25px;
     --swiper-navigation-size: 25px;
-    opacity: .5;
-    background-color: #7a956b;
-    border-radius: 50%;
-  } */
+    opacity: 0.5;
+  }
   .swiper-button-next:hover,
   .swiper-button-prev:hover{
-    background-color:#fff;
+    background-color:transparent;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.8;
+   ;
   }
     /* Position the "next button" to the right */
   .swiper-button-prev,.swiper-button-next {
@@ -100,14 +103,15 @@ body {
     background-color: #7a956b;
     top:40px;
     position: relative;
+    display: none;
   }
-  .swiper-horizontal>.swiper-scrollbar,
+  /* .swiper-horizontal>.swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal{
         position: absolute;
         left: 1%;
         bottom: 100px;
         z-index: 50;
-        height: -200px;
+        height: -300px;
         width: 100%;
         opacity: 1;
   }
@@ -116,30 +120,106 @@ body {
     cursor: pointer;
       opacity: .5;
       transition: opacity .3s ease-in-out;
-   }
+   } */
 
 
 .swiper-container{
-    padding: 30px 0px 50px 0px;
+    padding: 30px 0px 20px 0px;
 }
 .swiper-slide img{
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: 100%;
   height: 800px;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 
 
-@media screen and (max-width:320px),
+@media screen and (max-width: 320px),
+(max-width:480px) {
+  .container {
+    width: 100%;
+  }
+    .swiper-slide img {
+      display: block;
+      margin: 0 auto;
+      width: 94%;
+      height: auto;
+      object-fit:contain;
+      border-radius: 10px;
+    }
+
+
+    /* Next & previous buttons */ 
+     .swiper-button-next{
+       position: absolute; 
+      top: 41%; 
+      right: 350px;
+      transform: translateY(-50%); 
+      background-image: url('/img/previous.svg');
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position:center;
+      
+    }
+
+   .swiper-button-prev{
+      position: absolute;
+      top: 41%;
+      left: 350px;
+      transform: translateY(-50%);
+      background-image: url('/img/next.svg') ;
+      
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+    }  
+    
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+        .swiper-horizontal>.swiper-scrollbar,
+        .swiper-scrollbar.swiper-scrollbar-horizontal {
+          
+          height: -300px;
+          width: 100%;
+          opacity: 1;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* @media screen and (max-width:320px),
 (max-width:480px) {
     .container {
-        width: 100%;
+        max-width: 480px;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .swiper-button-next{
+      right: 50%;
+      right: 300px;
+      transform: translateY(-50%);
+    }
+    .swiper-button-prev{
+      right: 50%;
+      left: 300px;
+      transform: translateY(-50%);
     }
 }
 
@@ -148,6 +228,7 @@ body {
    max-width: 100%;
    margin: 0 auto;
    }
+   
 
 }
 
@@ -157,4 +238,4 @@ body {
        margin: 0 auto;
    }
 
-}
+} */
