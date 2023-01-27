@@ -154,9 +154,9 @@ body {
 
     /* Next & previous buttons */ 
      .swiper-button-next{
-       position: absolute; 
-      top: 41%; 
-      right: 350px;
+      position: absolute;
+      top: 84%; 
+      right: 85%;
       transform: translateY(-50%); 
       background-image: url('/img/previous.svg');
       background-repeat: no-repeat;
@@ -165,10 +165,11 @@ body {
       
     }
 
+
    .swiper-button-prev{
       position: absolute;
-      top: 41%;
-      left: 350px;
+      top: 84%;
+      left: 85%;
       transform: translateY(-50%);
       background-image: url('/img/next.svg') ;
       
@@ -177,7 +178,21 @@ body {
       background-position: center;
       
     }  
-    
+    @media (max-width:320px){
+      
+      .swiper-button-next {
+          /* position: absolute; */
+          top: 60%;
+          right: 85%;
+          transform: translateY(-50%);
+      }
+     .swiper-button-prev {
+          /* position: absolute; */
+          top: 60%;
+          left: 85%;
+          transform: translateY(-50%);
+      }
+    }
 }
 
 @media screen and (min-width: 768px) {
