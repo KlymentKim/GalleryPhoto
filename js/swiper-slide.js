@@ -53,7 +53,7 @@ const swiper = new Swiper('#swiper-1', {
       speed: 900,
  
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
-      //  effect:'cude',
+       effect:'cude',
     
        breakpoints: {
         767: {
@@ -76,7 +76,6 @@ const swiper = new Swiper('#swiper-1', {
             // slidesPerColumn: 2,
         }
     },
-    
     effect: 'cube',
     grabCursor: true,
     cubeEffect: {
