@@ -78,7 +78,7 @@ body {
 
 /* disable 320-480 */
 @media (max-width:320px),
-(max-width:765px){
+(max-width:767px){
     .swiper-button-next,
     .swiper-button-prev {
         opacity: 0;

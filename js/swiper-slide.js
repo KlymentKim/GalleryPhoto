@@ -57,14 +57,14 @@ const swiper = new Swiper('#swiper-1', {
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
       //  effect:'cude',
 
-      speed: 900,
+      speed: 800,
       effect: "cube",
       grabCursor: true,
       cubeEffect: {
-        shadow: true,
-        slideShadows: true,
+        // shadow: true,
+        // slideShadows: true,
         // shadowOffset: 20,
-        shadowScale: 0.94,
+        // shadowScale: 0.94,
       },
     
        breakpoints: {
@@ -86,17 +86,17 @@ const swiper = new Swiper('#swiper-1', {
           allowTouchMove: true,
       },
         767: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             freeMode: true,
             slidesPerView: 'auto',
             allowTouchMove: true,
         },
         1024: { 
-            slidesPerView: 1,
+         
             allowTouchMove: true,
         },
         1260: {
-            slidesPerView: 1,
+            
             allowTouchMove: true,
           
         }
