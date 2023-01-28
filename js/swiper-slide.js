@@ -58,13 +58,13 @@ const swiper = new Swiper('#swiper-1', {
       //  effect:'cude',
 
       speed: 900,
-      effect: 'coverflow',
+      effect: "cube",
       grabCursor: true,
       cubeEffect: {
         shadow: true,
         slideShadows: true,
-        shadowOffset: 50,
-        shadowScale: 0.3,
+        shadowOffset: 20,
+        shadowScale: 0.94,
       },
     
        breakpoints: {
