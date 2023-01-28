@@ -39,7 +39,6 @@ const swiper = new Swiper('#swiper-1', {
     navigation: {
       prevEl: '.swiper-button-prev',
       nextEl: '.swiper-button-next',
-        
     },
   
     // And if we need scrollbar
@@ -74,6 +73,11 @@ const swiper = new Swiper('#swiper-1', {
           freeMode: true,
           slidesPerView: 'auto',
           allowTouchMove: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            disabledClass: 'disabled_swiper_button'
+          },
       },
         480: {
           slidesPerView: 1,
@@ -82,18 +86,19 @@ const swiper = new Swiper('#swiper-1', {
           allowTouchMove: true,
       },
         767: {
+            slidesPerView: 1,
             freeMode: true,
             slidesPerView: 'auto',
             allowTouchMove: true,
         },
         1024: { 
+            slidesPerView: 1,
             allowTouchMove: true,
         },
         1260: {
+            slidesPerView: 1,
             allowTouchMove: true,
-            // spaceBetween: 15,
-            // slidesPerView: 0,
-            // slidesPerColumn: 2,
+          
         }
     },
 
