@@ -77,13 +77,12 @@ body {
 }
 
 /* disable 320-480 */
-@media (max-width:320px),
-(max-width:767px){
+@media (max-width:767px){
     .swiper-button-next,
     .swiper-button-prev {
-        opacity: 0;
+        /* opacity: 0;
         cursor: auto;
-        pointer-events: none;
+        pointer-events: none; */
         display: none;
     }
 }
