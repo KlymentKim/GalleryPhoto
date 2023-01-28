@@ -63,7 +63,7 @@ const swiper = new Swiper('#swiper-1', {
       cubeEffect: {
         shadow: true,
         slideShadows: true,
-        shadowOffset: 20,
+        // shadowOffset: 20,
         shadowScale: 0.94,
       },
     
