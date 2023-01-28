@@ -1,5 +1,6 @@
 
 body {
+    position: relative;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: rgb(2,0,36);
@@ -18,10 +19,10 @@ body {
 
 .swiper-slide img {
     display: block;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 20px;
   }
 
@@ -51,3 +52,24 @@ body {
     transform: translate(-50%,-50%);
     padding: 5px 0 5px 0px;
   }
+  .swiper-button-prev {
+    width: 10px; 
+    height: 10px;
+    padding: 10px;
+    opacity: 0.5;
+
+}
+
+.swiper-button-next {
+    padding: 10px;
+    width: 5px;
+    height: 5px;
+    opacity: 0.3;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    color: rgb(7, 241, 151);   
+}
+
