@@ -6,30 +6,33 @@ const swiper = new Swiper('#swiper-1', {
     autoplayDisableOnInteraction: false,
 		loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false,
       },
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      //  clickable: true,
-    //   dynamicBullets: true,
-
+       pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
 
      //Фракция
-     type:'fraction',
-     renderFraction: function (currentClass, totalClass){
-         return 'Фото <span class = "' + currentClass + '"></span>' + 
-         ' из ' + 
-         '<span class = "' + totalClass + '"></span>';
-     },
-    },
+    //  type:'fraction',
+    //  renderFraction: function (currentClass, totalClass){
+    //      return 'Фото <span class = "' + currentClass + '"></span>' + 
+    //      ' из ' + 
+    //      '<span class = "' + totalClass + '"></span>';
+    //  },
+    // },
 
-    scollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true
-    },
+    // scollbar: {
+    //     el: '.swiper-scrollbar',
+    //     draggable: true
+    // },
   
    
     // Navigation arrows
@@ -40,20 +43,30 @@ const swiper = new Swiper('#swiper-1', {
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
 
       keyboard: {
         enable: true,
         onlyInViewpot: true,
-        pageUpDown: true
+        // pageUpDown: true
     },
 
    
  
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
       //  effect:'cude',
+
+      speed: 900,
+      effect: 'fade',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 50,
+        shadowScale: 0.3,
+      },
     
        breakpoints: {
         767: {
@@ -77,16 +90,7 @@ const swiper = new Swiper('#swiper-1', {
         }
     },
 
-    speed: 900,
-    effect: 'cube',
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 50,
-      shadowScale: 0.3,
-    },
-       
+  
   });
 
 //   var tabsSwiper = new Swiper('.slider',{
