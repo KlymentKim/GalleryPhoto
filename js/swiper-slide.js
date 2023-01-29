@@ -1,7 +1,7 @@
 const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     initialSlide: 0,
-    spaceBetween: 200,
+    // spaceBetween: 200,
     autoHeight: true,
     autoplayDisableOnInteraction: false,
 		loop: true,
@@ -58,7 +58,7 @@ const swiper = new Swiper('#swiper-1', {
     
 
       speed: 800,
-      effect: "cube",
+      effect: "flip",
       grabCursor: true,
       // cubeEffect: {
       //   // shadow: true,
