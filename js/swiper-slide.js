@@ -3,7 +3,7 @@ const swiper = new Swiper('#swiper-1', {
     initialSlide: 0,
     spaceBetween: 30,
     autoHeight: true,
-    speed:900,
+    speed:100,
     // autoplayDisableOnInteraction: true,
 		loop: true,
     autoplay: {
