@@ -1,9 +1,10 @@
 const swiper = new Swiper('#swiper-1', {
     // Optional parameters
     initialSlide: 0,
-    // spaceBetween: 200,
+    spaceBetween: 30,
     autoHeight: true,
-    autoplayDisableOnInteraction: false,
+    speed:900,
+    // autoplayDisableOnInteraction: true,
 		loop: true,
     autoplay: {
       delay: 3000,
@@ -52,14 +53,10 @@ const swiper = new Swiper('#swiper-1', {
         // pageUpDown: true
     },
 
-   
- 
     // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
-    
-
-      speed: 800,
+  
       effect: "flip",
-      grabCursor: true,
+      // grabCursor: true,
       // cubeEffect: {
       //   // shadow: true,
       //   // slideShadows: true,
@@ -73,12 +70,7 @@ const swiper = new Swiper('#swiper-1', {
           freeMode: true,
           slidesPerView: 'auto',
           allowTouchMove: true,
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            disabledClass: 'disabled_swiper_button'
-          },
-      },
+        },
         480: {
           slidesPerView: 1,
           freeMode: true,
@@ -92,11 +84,9 @@ const swiper = new Swiper('#swiper-1', {
             allowTouchMove: true,
         },
         1024: { 
-         
             allowTouchMove: true,
         },
-        1260: {
-            
+        1260: {          
             allowTouchMove: true,
           
         }
